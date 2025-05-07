@@ -1,0 +1,64 @@
+.grid-container {
+  display: grid;
+  grid: 1fr 1fr / 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+
+.grid-item {
+  width: 200px;
+  height: 260px;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 2fr 1fr;
+  background-color: chocolate;
+  border-radius: 20px;
+  transition: transform 0.2s;
+}
+
+.grid-item:hover {
+  outline: solid brown 2px;
+  outline-offset: 4px;
+  transform: scale(1.05);
+}
+
+.grid-item .seemore-btn:last-child {
+  margin: auto;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: large;
+  padding: 5px;
+}
+
+.card-sentence {
+  text-align: start;
+  font-size: medium;
+  padding-inline: 5px;
+}
+
+.card-text {
+  text-align: start;
+  font-size: smaller;
+  padding: 5px;
+}
+
+.seemore-btn {
+  width: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  background-color: brown;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.seemore-btn:hover {
+  background-color: rgb(192, 45, 45);
+}

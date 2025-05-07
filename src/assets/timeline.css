@@ -1,0 +1,99 @@
+.timeline-line {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.timeline-line::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.container::after {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  right: -19px;
+  background-color: black;
+  border: 8px solid var(--timeline-event-color);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.content {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  animation: ease-in both running fadeIn;
+  animation-timeline: view();
+  animation-range: entry 25% cover 55%;
+}
+
+.left {
+  left: 0;
+}
+.left::before {
+  content: attr(data-before-content);
+  text-align: center;
+  font-size: large;
+  height: 30px;
+  position: absolute;
+  width: 200px;
+  z-index: 1;
+  top: 17px;
+  right: 7px;
+  background-color: var(--timeline-event-color);
+  color: var(--timeline-event-text-color);
+  border-radius: 10px 0 0 10px;
+}
+.left .content {
+  text-align: start;
+}
+
+.right {
+  left: 50%;
+}
+.right::before {
+  content: attr(data-before-content);
+  text-align: center;
+  font-size: large;
+  height: 30px;
+  position: absolute;
+  top: 17px;
+  width: 200px;
+  z-index: 1;
+  left: 7px;
+  background-color: var(--timeline-event-color);
+  color: var(--timeline-event-text-color);
+  border-radius: 0 10px 10px 0;
+}
+.right::after {
+  left: -17px;
+}
+.right .content {
+  text-align: end;
+}
+.right li {
+  direction: rtl;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
