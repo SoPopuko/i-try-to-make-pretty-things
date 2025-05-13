@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Example: list of friends's birthdays</h1>
     <Timeline />
   </div>
 </template>

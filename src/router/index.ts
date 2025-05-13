@@ -19,6 +19,11 @@ const router = createRouter({
       name: 'grid cards',
       component: () => import('../views/GridCardsVue.vue'),
     },
+    {
+      path: '/side-menu',
+      name: 'side-menu',
+      component: () => import('../views/SideMenuVue.vue'),
+    },
   ],
 })
 

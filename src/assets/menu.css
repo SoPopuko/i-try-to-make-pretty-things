@@ -1,0 +1,39 @@
+.container {
+    width: 5rem;
+    background-color: rgb(223, 129, 145);
+    padding: 1rem;
+    overflow: hidden;
+    transition: width 1s ;
+}
+.container:hover {
+    width: 19rem;
+    transition: width 1s ;
+}
+
+.sidebar {
+  width: 17rem;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 5px 0 0 5px;
+  transition: width .75s ease;
+  color:black;
+}
+
+.itemMenu {
+    display: flex;
+    margin-top: 0.75rem;
+    padding: 1rem 0;
+    transition: 0.1s ;
+    border-radius: 1rem;
+  
+  }
+  .itemMenu:hover {
+      background-color: pink ;
+      transition: 0.75s ;
+      cursor: pointer;
+  }
+  .iconItemMenu, .textItemMenu {
+      margin: 0 1rem;
+  }
+  

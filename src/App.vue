@@ -11,6 +11,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
     <nav>
       <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/side-menu">Side Menu</RouterLink>
       <RouterLink to="/timeline">Timeline</RouterLink>
       <RouterLink to="/grid-cards">Grid cards</RouterLink>
     </nav>
