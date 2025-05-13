@@ -1,349 +1,65 @@
 <template>
   <div class="timeline-container">
     <div class="timeline-line">
-      <div
-        class="container left"
-        data-before-content="8 janvier"
-        style="--timeline-event-color: red; --timeline-event-text-color: black"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Fanny</h2>
-          <span> 21 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>Chaussures Adadas</li>
-            <li>Trousse à maquillage</li>
-            <li>Top à bretelles</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container right"
-        data-before-content="12 février"
-        style="--timeline-event-color: orange; --timeline-event-text-color: black"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Julien</h2>
-          <span> 15 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>T-shirt du LOSC</li>
-            <li>Sac eastpack</li>
-            <li>Ordinateur gaming</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container left"
-        data-before-content="15 juillet"
-        style="--timeline-event-color: yellow; --timeline-event-text-color: black"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Alice</h2>
-          <span> 26 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>Livres</li>
-            <li>Peinture</li>
-            <li>Crayons feutres</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container right"
-        data-before-content="30 septembre"
-        style="--timeline-event-color: green; --timeline-event-text-color: white"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Arthur</h2>
-          <span> 8 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>Playmobils</li>
-            <li>Livres de coloriage</li>
-            <li>Action man</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container left"
-        data-before-content="8 janvier"
-        style="--timeline-event-color: red; --timeline-event-text-color: black"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Fanny</h2>
-          <span> 21 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>Chaussures Adadas</li>
-            <li>Trousse à maquillage</li>
-            <li>Top à bretelles</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container right"
-        data-before-content="12 février"
-        style="--timeline-event-color: orange; --timeline-event-text-color: black"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Julien</h2>
-          <span> 15 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>T-shirt du LOSC</li>
-            <li>Sac eastpack</li>
-            <li>Ordinateur gaming</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container left"
-        data-before-content="15 juillet"
-        style="--timeline-event-color: yellow; --timeline-event-text-color: black"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Alice</h2>
-          <span> 26 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>Livres</li>
-            <li>Peinture</li>
-            <li>Crayons feutres</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container right"
-        data-before-content="30 septembre"
-        style="--timeline-event-color: green; --timeline-event-text-color: white"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Arthur</h2>
-          <span> 8 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>Playmobils</li>
-            <li>Livres de coloriage</li>
-            <li>Action man</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container left"
-        data-before-content="8 janvier"
-        style="--timeline-event-color: red; --timeline-event-text-color: black"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Fanny</h2>
-          <span> 21 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>Chaussures Adadas</li>
-            <li>Trousse à maquillage</li>
-            <li>Top à bretelles</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container right"
-        data-before-content="12 février"
-        style="--timeline-event-color: orange; --timeline-event-text-color: black"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Julien</h2>
-          <span> 15 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>T-shirt du LOSC</li>
-            <li>Sac eastpack</li>
-            <li>Ordinateur gaming</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container left"
-        data-before-content="15 juillet"
-        style="--timeline-event-color: yellow; --timeline-event-text-color: black"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Alice</h2>
-          <span> 26 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>Livres</li>
-            <li>Peinture</li>
-            <li>Crayons feutres</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container right"
-        data-before-content="30 septembre"
-        style="--timeline-event-color: green; --timeline-event-text-color: white"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Arthur</h2>
-          <span> 8 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>Playmobils</li>
-            <li>Livres de coloriage</li>
-            <li>Action man</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container left"
-        data-before-content="8 janvier"
-        style="--timeline-event-color: red; --timeline-event-text-color: black"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Fanny</h2>
-          <span> 21 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>Chaussures Adadas</li>
-            <li>Trousse à maquillage</li>
-            <li>Top à bretelles</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container right"
-        data-before-content="12 février"
-        style="--timeline-event-color: orange; --timeline-event-text-color: black"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Julien</h2>
-          <span> 15 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>T-shirt du LOSC</li>
-            <li>Sac eastpack</li>
-            <li>Ordinateur gaming</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container left"
-        data-before-content="15 juillet"
-        style="--timeline-event-color: yellow; --timeline-event-text-color: black"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Alice</h2>
-          <span> 26 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>Livres</li>
-            <li>Peinture</li>
-            <li>Crayons feutres</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container right"
-        data-before-content="30 septembre"
-        style="--timeline-event-color: green; --timeline-event-text-color: white"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Arthur</h2>
-          <span> 8 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>Playmobils</li>
-            <li>Livres de coloriage</li>
-            <li>Action man</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container left"
-        data-before-content="8 janvier"
-        style="--timeline-event-color: red; --timeline-event-text-color: black"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Fanny</h2>
-          <span> 21 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>Chaussures Adadas</li>
-            <li>Trousse à maquillage</li>
-            <li>Top à bretelles</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container right"
-        data-before-content="12 février"
-        style="--timeline-event-color: orange; --timeline-event-text-color: black"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Julien</h2>
-          <span> 15 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>T-shirt du LOSC</li>
-            <li>Sac eastpack</li>
-            <li>Ordinateur gaming</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container left"
-        data-before-content="15 juillet"
-        style="--timeline-event-color: yellow; --timeline-event-text-color: black"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Alice</h2>
-          <span> 26 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>Livres</li>
-            <li>Peinture</li>
-            <li>Crayons feutres</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="container right"
-        data-before-content="30 septembre"
-        style="--timeline-event-color: green; --timeline-event-text-color: white"
-      >
-        <div class="content">
-          <IconCake />
-          <h2>Arthur</h2>
-          <span> 8 ans</span>
-          <div><u>cadeaux souhaités</u></div>
-          <ul>
-            <li>Playmobils</li>
-            <li>Livres de coloriage</li>
-            <li>Action man</li>
-          </ul>
-        </div>
-      </div>
+      <TimelineStep
+        :name="'Fanny'"
+        :age="21"
+        :wishlist="['Chaussures Adadas', 'Trousse à maquillage', 'Top à bretelles']"
+        :is-left="true"
+        :color="'red'"
+        :text-color="'black'"
+      />
+      <TimelineStep
+        :name="'Julien'"
+        :age="15"
+        :wishlist="['T-shirt du LOSC', 'Sac eastpack', 'Ordinateur gaming']"
+        :is-left="false"
+        :color="'orange'"
+        :text-color="'black'"
+      />
+      <TimelineStep
+        :name="'Alice'"
+        :age="26"
+        :wishlist="['Livres', 'Peinture', 'Crayons feutres']"
+        :is-left="true"
+        :color="'yellow'"
+        :text-color="'black'"
+      />
+      <TimelineStep
+        :name="'Arthur'"
+        :age="8"
+        :wishlist="['Playmobils', 'Livres de coloriage', 'Action man']"
+        :is-left="false"
+        :color="'green'"
+        :text-color="'white'"
+      />
+      <TimelineStep
+        :name="'Fanny'"
+        :age="21"
+        :wishlist="['Chaussures Adadas', 'Trousse à maquillage', 'Top à bretelles']"
+        :is-left="true"
+        :color="'skyblue'"
+        :text-color="'black'"
+      />
+      <TimelineStep
+        :name="'Julien'"
+        :age="15"
+        :wishlist="['T-shirt du LOSC', 'Sac eastpack', 'Ordinateur gaming']"
+        :is-left="false"
+        :color="'indigo'"
+        :text-color="'white'"
+      />
+      <TimelineStep
+        :name="'Alice'"
+        :age="26"
+        :wishlist="['Livres', 'Peinture', 'Crayons feutres']"
+        :is-left="true"
+        :color="'purple'"
+        :text-color="'black'"
+      />
     </div>
   </div>
 </template>
 <script setup lang="ts">
-import IconCake from './icons/IconCake.vue'
+import TimelineStep from './timeline/TimelineStep.vue'
 </script>

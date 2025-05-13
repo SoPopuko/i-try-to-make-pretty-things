@@ -58,8 +58,29 @@
   font-weight: normal;
 }
 
+header,
+footer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  text-align: center;
+  background-color: #4c2913;
+}
+
 header {
-  background-color: #4C2913;
+  grid-template-rows: 2fr 1fr;
+}
+
+header nav {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+nav a {
+  text-decoration: none;
+  color: #edd2ad;
+  transition: 0.4s;
+  padding: 3px;
 }
 
 body {

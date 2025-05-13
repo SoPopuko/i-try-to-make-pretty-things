@@ -1,14 +1,11 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
-<template>
+<template id="webpage">
   <header>
-    <div class="header">
-      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="64" height="125" />
-      <HelloWorld msg="I try to make pretty things" />
-    </div>
+    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="64" height="125" />
+    <h1>I try to make pretty things</h1>
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/side-menu">Side Menu</RouterLink>
@@ -16,14 +13,12 @@ import HelloWorld from './components/HelloWorld.vue'
       <RouterLink to="/grid-cards">Grid cards</RouterLink>
     </nav>
   </header>
-
-  <RouterView />
-
+  <body>
+    <RouterView />
+  </body>
   <footer>
-    <div class="header">
-      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="64" height="125" />
-      <HelloWorld msg="I try to make pretty things" />
-    </div>
+    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="64" height="125" />
+    <h1>I said I try to make pretty things</h1>
   </footer>
 </template>
 

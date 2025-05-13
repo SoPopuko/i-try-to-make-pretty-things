@@ -36,9 +36,12 @@
   padding: 20px 30px;
   position: relative;
   border-radius: 6px;
+}
+
+.container:not(:last-child, :first-child) .content {
   animation: ease-in both running fadeIn;
   animation-timeline: view();
-  animation-range: entry 25% cover 55%;
+  animation-range: entry 25% cover 60%;
 }
 
 .left {
