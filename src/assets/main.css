@@ -2,6 +2,8 @@
 @import './timeline.css';
 @import './gridcards.css';
 @import './menu.css';
+@import './home.css';
+
 
 #webpage {
   display: grid;
@@ -9,7 +11,7 @@
 }
 
 @media (hover: hover) {
-  a:hover {
+  nav a:hover {
     background-color: #270e06;
   }
 }
