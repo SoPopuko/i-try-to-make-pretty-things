@@ -2,7 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
-<template id="webpage">
+<template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="64" height="125" />
     <h1>I try to make pretty things</h1>
@@ -11,6 +11,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink to="/side-menu">Side Menu</RouterLink>
       <RouterLink to="/timeline">Timeline</RouterLink>
       <RouterLink to="/grid-cards">Grid cards</RouterLink>
+      <RouterLink to="/folding-panel">Panneau dépliant</RouterLink>
     </nav>
   </header>
   <body>

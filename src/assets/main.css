@@ -3,7 +3,7 @@
 @import './gridcards.css';
 @import './menu.css';
 @import './home.css';
-
+@import './panel.css';
 
 #webpage {
   display: grid;

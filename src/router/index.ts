@@ -24,6 +24,11 @@ const router = createRouter({
       name: 'side-menu',
       component: () => import('../views/SideMenuVue.vue'),
     },
+    {
+      path: '/folding-panel',
+      name: 'folding-panel',
+      component: () => import('../views/FoldingPanelVue.vue'),
+    },
   ],
 })
 

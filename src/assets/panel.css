@@ -1,0 +1,46 @@
+.panel-container {
+  padding: 1em 2em;
+}
+
+.panel-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1em;
+  font-size: large;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.panel-desc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1em;
+  padding: 1em;
+  animation: 3s ease-in 1s infinite reverse both running slide-in;
+}
+
+.panel-off {
+  display: none;
+  animation: 3s ease-in 1s infinite reverse both running slide-in;
+}
+
+@keyframes openPanel {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes closePanel {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
