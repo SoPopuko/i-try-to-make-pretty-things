@@ -17,30 +17,52 @@
 .panel-desc {
   display: flex;
   flex-direction: column;
-  width: 100%;
   gap: 1em;
   padding: 1em;
-  animation: 3s ease-in 1s infinite reverse both running slide-in;
+  position:relative;
+  animation:openPanel 0.4s
 }
 
 .panel-off {
-  display: none;
-  animation: 3s ease-in 1s infinite reverse both running slide-in;
+  opacity: 0;
+  padding: 1em;
+  position:relative;
+  animation:closePanel 0.4s
 }
 
-@keyframes openPanel {
-  from {
-    width: 0;
+@keyframes openPanel{
+  from{
+    top:-30px;opacity:0
   }
-  to {
-    width: 100%;
+  to{
+    top:0;opacity:1
   }
 }
-@keyframes closePanel {
-  from {
-    opacity: 0;
+
+@keyframes closePanel{
+  from{
+    top:30px;opacity:0
   }
-  to {
-    opacity: 1;
+  to{
+    top:0;opacity:1
   }
+}
+
+
+.test-desc {
+  display: none;
+  overflow: hidden;
+  border: solid red 2px;
+}
+
+.opened {
+  display: block;
+  animation:open 0.4s
+}
+
+@keyframes open{
+  0%   {height: 0;}
+  25%  {height: 25%;}
+  50%  {height: 50%;}
+  100% {height: 100%;}
 }
