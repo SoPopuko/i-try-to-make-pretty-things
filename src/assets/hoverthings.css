@@ -1,0 +1,28 @@
+
+.small {
+  width: 150px;
+}
+.medium {
+  width: 200px;
+}
+.large {
+  width: 250px;
+}
+
+.hover-things-btn {
+  background-color: rgb(88, 53, 124);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin: 2em;
+  border-radius: 10px;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.hover-things-btn:hover {
+  background-color: rgb(197, 158, 238);
+  color: black;
+  transform: translateY(-10px);
+}
+

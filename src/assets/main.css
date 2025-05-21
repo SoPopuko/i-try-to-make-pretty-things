@@ -4,6 +4,7 @@
 @import './menu.css';
 @import './home.css';
 @import './panel.css';
+@import './hoverthings.css';
 
 #webpage {
   display: grid;

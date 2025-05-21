@@ -4,46 +4,16 @@ import IconSupport from './icons/IconSupport.vue'
 
 const panelOn = ref()
 
-function PanelState() {
-  panelOn.value = !panelOn.value;
-}
-
 </script>
 
 <template>
   <div>
-    <!-- <div class="panel-container">
+    <div class="panel-container">
       <div class="panel-title" @click="panelOn = !panelOn">
         <IconSupport :style="panelOn === true ? 'color: red' : 'color: pink'" />
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
       <div :class="{'panel-desc': panelOn}" :hidden="panelOn === false">
-        <p>
-          Aenean consectetur libero lectus. Proin id ante arcu. Nulla justo justo, vehicula sit amet
-          ante quis, molestie euismod est. Praesent eros augue, rutrum non erat in, rutrum porttitor
-          neque. Sed eleifend nec erat sed posuere. Vivamus ultrices quam lorem, sit amet pulvinar
-          ex rutrum eu. Vestibulum semper neque vitae efficitur varius. Phasellus porta molestie
-          purus, id porta turpis porttitor quis.
-        </p>
-        <p>
-          Cras scelerisque, elit sed consectetur suscipit, eros ex sodales leo, nec pellentesque
-          arcu orci eu risus. Donec at dui sit amet felis cursus placerat ut sit amet nisl. Etiam
-          quis lacinia ex. Cras faucibus fringilla vestibulum. Curabitur scelerisque pellentesque
-          nisl eget euismod. Integer ac posuere enim. Aliquam erat volutpat. Morbi eget ultrices
-          risus, non tincidunt nibh. Cras tempor erat ligula, at mollis massa aliquet nec. In vel
-          est vel risus cursus condimentum. Sed viverra volutpat urna sit amet facilisis. Morbi non
-          ligula ac tellus porttitor interdum. Sed vestibulum cursus commodo.
-        </p>
-      </div>
-    </div>-->
-
-    <div class="panel-container">
-      <div class="panel-title" @click="PanelState">
-        <IconSupport :style="panelOn === true ? 'color: red' : 'color: pink'" />
-        <p>Lorem ipsum dolor sit amet.</p>
-        {{ panelOn }}
-      </div>
-      <div class="test-desc" :class="{'opened': panelOn}">
         <p>
           Aenean consectetur libero lectus. Proin id ante arcu. Nulla justo justo, vehicula sit amet
           ante quis, molestie euismod est. Praesent eros augue, rutrum non erat in, rutrum porttitor

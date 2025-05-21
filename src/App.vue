@@ -12,6 +12,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink to="/timeline">Timeline</RouterLink>
       <RouterLink to="/grid-cards">Grid cards</RouterLink>
       <RouterLink to="/folding-panel">Panneau dépliant</RouterLink>
+      <RouterLink to="/hover-things">Hover things</RouterLink>
     </nav>
   </header>
   <body>

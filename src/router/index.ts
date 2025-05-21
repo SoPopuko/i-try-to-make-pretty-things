@@ -29,6 +29,11 @@ const router = createRouter({
       name: 'folding-panel',
       component: () => import('../views/FoldingPanelVue.vue'),
     },
+    {
+      path: '/hover-things',
+      name: 'hover-things',
+      component: () => import('../views/HoverThingsVue.vue'),
+    },
   ],
 })
 
