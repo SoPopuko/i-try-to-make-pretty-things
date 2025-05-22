@@ -15,54 +15,41 @@
 }
 
 .panel-desc {
-  display: flex;
-  flex-direction: column;
+  display: none;
+  position: relative;
   gap: 1em;
   padding: 1em;
-  position:relative;
-  animation:openPanel 0.4s
 }
-
-.panel-off {
-  opacity: 0;
-  padding: 1em;
-  position:relative;
-  animation:closePanel 0.4s
-}
-
-@keyframes openPanel{
-  from{
-    top:-30px;opacity:0
-  }
-  to{
-    top:0;opacity:1
-  }
-}
-
-@keyframes closePanel{
-  from{
-    top:30px;opacity:0
-  }
-  to{
-    top:0;opacity:1
-  }
-}
-
-
-.test-desc {
-  display: none;
-  overflow: hidden;
-  border: solid red 2px;
-}
-
 .opened {
-  display: block;
-  animation:open 0.4s
+  display: flex;
+  flex-direction: column;
+  animation: openPanel 0.8s;
+}
+.closed {
+  display: none;
+  animation: closePanel 0.8s;
 }
 
-@keyframes open{
-  0%   {height: 0;}
-  25%  {height: 25%;}
-  50%  {height: 50%;}
-  100% {height: 100%;}
+@keyframes openPanel {
+  from {
+    top: -30px;
+    display: none;
+  }
+  to {
+    top: 0;
+    display: flex;
+  }
+}
+
+@keyframes closePanel {
+  from {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  to {
+    top: -30px;
+    display: none;
+    flex-direction: column;
+  }
 }

@@ -2,18 +2,18 @@
 import { ref } from 'vue'
 import IconSupport from './icons/IconSupport.vue'
 
-const panelOn = ref()
-
+const panelOn = ref(false)
+const ready = ref(false)
 </script>
 
 <template>
   <div>
     <div class="panel-container">
-      <div class="panel-title" @click="panelOn = !panelOn">
+      <div class="panel-title" @click="((panelOn = !panelOn), (ready = true))">
         <IconSupport :style="panelOn === true ? 'color: red' : 'color: pink'" />
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
-      <div :class="{'panel-desc': panelOn}" :hidden="panelOn === false">
+      <div class="panel-desc" :class="{ opened: panelOn, closed: !panelOn && ready }">
         <p>
           Aenean consectetur libero lectus. Proin id ante arcu. Nulla justo justo, vehicula sit amet
           ante quis, molestie euismod est. Praesent eros augue, rutrum non erat in, rutrum porttitor

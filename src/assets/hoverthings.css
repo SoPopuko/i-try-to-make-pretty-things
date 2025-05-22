@@ -1,3 +1,16 @@
+.hover-things-flex {
+  display: flex;
+  gap: 10px;
+}
+
+.separator {
+  content: ' ';
+  width: 1px;
+  height: 8em;
+  background-color: #fff;
+}
+
+/*-----------------------------------------------*/
 
 .small {
   width: 150px;
@@ -14,7 +27,7 @@
   color: white;
   text-align: center;
   padding: 1em;
-  margin: 2em;
+  margin: 2em 0;
   border-radius: 10px;
   transition: all 1s;
   cursor: pointer;
@@ -26,3 +39,82 @@
   transform: translateY(-10px);
 }
 
+/*-----------------------------------------------*/
+
+.hover-things-text {
+  width: 200px;
+  border: solid rgb(180, 157, 180) 5px;
+  border-radius: 1em;
+  padding: 15px;
+  margin: 20px 0;
+  color: rgb(180, 157, 180);
+  text-align: center;
+  cursor: pointer;
+}
+
+.instant:hover {
+  color: rgb(145, 59, 145);
+}
+
+.slower {
+  color: rgb(180, 157, 180);
+  transition: color 1s;
+}
+.slower:hover {
+  color: rgb(145, 59, 145);
+}
+
+.floating:hover p {
+  transition: transform 1s;
+}
+.floating:hover p {
+  color: rgb(145, 59, 145);
+  transform: translateY(-5px);
+}
+.floating:not(:hover) p {
+  color: rgb(180, 157, 180);
+  transform: translateY(0);
+  transition: transform 1s;
+}
+
+/*-----------------------------------------------*/
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 3em;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:hover .slower .tooltiptext {
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
